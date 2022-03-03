@@ -1,0 +1,90 @@
+.header {
+  height: 85vh;
+  background-image: linear-gradient(
+    to right bottom,
+    $color-secondary-light,
+    $color-secondary-dark
+  );
+  clip-path: polygon(0 0, 100% 0, 100% 91%, 0% 100%);
+  position: relative;
+  padding: 5rem;
+
+  &__logo-box {
+    margin-bottom: 10rem;
+    animation: moveInLeft 1s ease-in-out;
+    -webkit-animation: moveInLeft 1s ease-in-out;
+  }
+
+  &__logo {
+    width: 7.5rem;
+    animation: roll 1s ease-in-out;
+    -webkit-animation: roll 1s ease-in-out;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__navigation {
+    list-style: none;
+    font-size: 2.5rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__navigation-item {
+    margin-right: 2rem;
+    cursor: pointer;
+    border-bottom: 2px transparent solid;
+    transition: all 0.5s;
+
+    &:first-child {
+      animation: moveInTop 0.5s ease-out;
+      -webkit-animation: moveInTop 0.5s ease-out;
+    }
+
+    &:nth-child(2) {
+      animation: moveInTop 1s ease-out;
+      -webkit-animation: moveInTop 1s ease-out;
+    }
+
+    &:nth-child(3) {
+      animation: moveInTop 1s ease-out;
+      -webkit-animation: moveInTop 1s ease-out;
+    }
+
+    &:last-child {
+      animation: moveInTop 1.5s ease-out;
+      -webkit-animation: moveInTop 1.5s ease-out;
+    }
+
+    &:hover {
+      border-bottom: 2px $color-primary solid;
+    }
+  }
+
+  &__navigation-link {
+    text-decoration: none;
+    color: $color-white;
+  }
+
+  &__icon {
+    color: $color-primary;
+    margin: 0.5rem;
+    transition: all 0.5s;
+  }
+
+  &__photo {
+    position: absolute;
+    top: 0;
+    width: 50rem;
+    z-index: -1;
+    animation: fadeIn 1.5s ease-in-out;
+    -webkit-animation: fadeIn 1.5s ease-in-out;
+  }
+
+  &__navigation-item:hover &__icon {
+    color: $color-white;
+  }
+}

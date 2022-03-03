@@ -1,0 +1,19 @@
+.information-box {
+  text-align: center;
+
+  &__description {
+    padding: 2rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    column-gap: 2rem;
+    column-count: 2;
+    column-rule-width: 2px;
+    column-rule-color: $color-primary;
+    column-rule-style: solid;
+    text-align: left;
+  }
+}
