@@ -1,0 +1,42 @@
+.service-box {
+  text-align: center;
+  background-color: $color-secondary;
+  padding: 2.5rem 5rem;
+  box-shadow: $shadow-2;
+  border-radius: $border-radius-medium;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  outline: 0.5rem dashed $color-secondary-light;
+  outline-offset: 1rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  min-height: 37.5rem;
+
+  &:hover {
+    box-shadow: $shadow-5;
+    transform: translateY(-3px);
+    -webkit-transform: translateY(-3px);
+    -moz-transform: translateY(-3px);
+    -ms-transform: translateY(-3px);
+    -o-transform: translateY(-3px);
+  }
+
+  &__icon {
+    color: $color-primary;
+    font-size: 4.5rem;
+    margin-bottom: 2rem;
+  }
+
+  &__header {
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+  }
+
+  &__description {
+    font-size: 1.5rem;
+  }
+}
